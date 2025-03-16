@@ -1,0 +1,18 @@
+@use './home.scss';
+
+
+@import url(https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap);
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 213, 255);
+}
+
+
