@@ -41,9 +41,11 @@
     'b'
     'c'
     'd'
+    'e'
+    'f'
     ;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 3vh;
     justify-content: center;
     min-height: 100vh;
@@ -55,7 +57,9 @@
 .snow,
 .main-title,
 .portfolio-link,
-.youtube-link {
+.youtube-link,
+.instagram-link,
+.tiktok-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +112,32 @@
     font-style: normal;
 }
 
-.youtube-link {
+.portfolio-link {
     grid-area: c;
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 179, 255);
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    // margin-bottom: 100px;
+    border-top: snow solid 11px;
+    z-index: 100;
+}
+.instagram-link {
+    grid-area: d;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 30, 14);
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    // margin-bottom: 100px;
+    border-top: snow solid 11px;
+    z-index: 100;
+}
+.youtube-link {
+    grid-area: e;
     color: rgb(255, 255, 255);
     background-color: blue;
     font-family: "Bungee Inline", sans-serif;
@@ -118,10 +146,12 @@
     border-top: snow solid 11px;
     z-index: 200;
 }
-.portfolio-link {
-    grid-area: d;
+
+
+.tiktok-link {
+    grid-area: f;
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 30, 14);
+    background-color: rgb(14, 255, 126);
     font-family: "Big Shoulders", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -131,8 +161,11 @@
     z-index: 100;
 }
 
+
 .youtube-link,
-.portfolio-link {
+.portfolio-link,
+.instagram-link,
+.tiktok-link {
       animation: link 4s infinite;
       border-radius: 11px;
       box-shadow: snow 0px 0px 30px;
@@ -182,7 +215,9 @@ letter-spacing: 1px;
    {
         font-size: 20px;
     }
-    .portfolio-link {
+    .portfolio-link,
+    .instagram-link,
+    .tiktok-link {
         font-size: 28px;
     }
 }
